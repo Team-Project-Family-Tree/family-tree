@@ -1,0 +1,108 @@
+body {
+  font-family: Verdana, sans-serif;
+  font-size: 0.9em;
+}
+
+header {
+  padding: 5px;
+  color: forestgreen;
+}
+
+h1 {
+  display: inline;
+}
+
+footer {
+  background-color: forestgreen;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+}
+
+section {
+  margin: 5px auto;
+  padding: 10px;
+}
+
+article {
+  margin: 5px;
+  padding: 10px;
+  background-color: white;
+  border: top 1px solid forestgreen;
+  text-align: center;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 5px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.login-info {
+  text-align: center;
+  margin: 10px;
+}
+
+iframe {
+  border: none;
+}
+
+/* unvisited link */
+
+a:link {
+  color: forestgreen;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* visited link */
+
+a:visited {
+  color: limegreen;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* mouse over link */
+
+a:hover {
+  color: forestgreen;
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+/* selected link */
+
+a:active {
+  color: lime;
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+table {
+  margin: 0 auto;
+}
+
+#member {
+  border: 1px solid forestgreen;
+}

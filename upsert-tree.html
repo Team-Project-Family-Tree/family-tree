@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MyFamilyTree - Edit</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <iframe src="header.html" width="100%" scrolling="no"></iframe>
+  <div id="upsert-story">
+    <section>
+      <h2>Family Tree</h2>
+      <article>
+        <!-- Title -->
+        <div>
+          <label for="title">Title</label>
+          <input id="title" type="text" placeholder="Enter Title" />
+        </div>
+        <!-- Text -->
+        <div>
+          <label for="text">Text</label>
+          <textarea id="text" rows="4" cols="50" placeholder="Enter Text"></textarea>
+        </div>
+        <table>
+          <tr>
+            <td>
+              <!-- Member 1 -->
+              <div>
+                <label for="member">Member detailss</label>
+                <div id="member">
+                  <a href="family-member.html">Father</a>
+                </div>
+              </div>
+            </td>
+            <td>
+              <!-- Member 2 -->
+              <div>
+                <label for="member">Member details</label>
+                <div id="member">
+                  <a href="family-member.html">Mother</a>
+                </div>
+              </div>
+            </td>
+            <td>
+              <!-- Member 3 -->
+              <div>
+                <label for="member">Member details</label>
+                <div id="member">
+                  <a href="family-member.html">Brother</a>
+                </div>
+              </div>
+            </td>
+            <td>
+              <!-- Member 4 -->
+              <div>
+                <label for="member">Member details</label>
+                <div id="member">
+                  <a href="family-member.html">Sister</a>
+                </div>
+              </div>
+            </td>
+            <td>
+              <!-- New member -->
+              <div>
+                <label for="member">Add a new member</label>
+                <div id="member">
+                  <a href="upsert-member.html">New member</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+
+        <button id="save-button">Save</button>
+      </article>
+    </section>
+  </div>
+  <iframe class="footer" src="footer.html" width="100%" scrolling="no"></iframe>
+</body>
+
+</html>
