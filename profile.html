@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>MyFamilyTree - Profile</title>
   <link rel="stylesheet" href="css/styles.css">
+  <script src="scripts/display.js"></script>
 </head>
 
 <body>
@@ -21,8 +22,8 @@
       </div>
       <!-- Last Name -->
       <div>
-        <label for="first-name">Last Name</label>
-        <span id="first-name">Brindeau</span>
+        <label for="last-name">Last Name</label>
+        <span id="last-name">Brindeau</span>
       </div>
       <!-- Alias -->
       <div>
@@ -46,6 +47,17 @@
       </div>
       <a href="edit-profile.html">Edit</a>
     </article>
+  </section>
+  <!--<input type="submit" id="update-profile" value="Update" />-->
+  <p>
+    <button onclick="display()" type="button">Display</button>
+  </p>
+  <a href="javascript:clear()">Clear Items</a>
+  </article>
+  
+  </section>
+  <section id="display_data">
+  
   </section>
   <iframe class="footer" src="footer.html" width="100%" scrolling="no"></iframe>
 </body>
