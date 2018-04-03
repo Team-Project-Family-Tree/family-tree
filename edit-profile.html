@@ -2,63 +2,67 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>MyFamilyTree - EditProfile</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <title>MyFamilyTree - EditProfile</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/save.js"></script>
+   
 </head>
 
 <body>
-  <iframe src="header.html" width="100%" scrolling="no"></iframe>
-  <section>
-    <h2>Edit Profile</h2>
-    <article class="signing">
-      <!-- First Name -->
-      <div class="profile-info">
-        <label for="first-name">First Name</label>
-        <input id="first-name" type="text" placeholder="Keno">
-      </div>
-      <!-- Last Name -->
-      <div class="profile-info">
-        <label for="first-name">Last Name</label>
-        <input id="first-name" type="text" placeholder="Mullings">
-      </div>
-      <!-- Alias -->
-      <div class="profile-info">
-        <label for="alias">Alias</label>
-        <input id="alias" type="text" placeholder="international">
-      </div>
-      <!-- Email -->
-      <div class="profile-info">
-        <label for="email">Email</label>
-        <input id="email" type="email" placeholder="me@me.com">
-      </div>
-      <!-- Gender -->
-      <div class="profile-info">
-        <label for="gender">How do you gender identify?</label>
-        <input id="gender" type="text" value="Male">
-      </div>
-      <!-- DOB -->
-      <div class="profile-info">
-        <label for="DOB">Date of Birth</label>
-        <input type="date" name="Date of Birth" data-date-inline-picker="true">
-      </div>
-      <!-- Password -->
-      <div class="profile-info">
-        <label for="password">Password</label>
-        <input type="password" placeholder="Enter your password">
-      </div>
-      <!-- Confirm Password -->
-      <div class="profile-info">
-        <label for="confirm-password">Confirm Password</label>
-        <input type="password" placeholder="Confirm your password">
-      </div>
+    <iframe src="header.html" width="100%"></iframe>
+    <section>
+        <h2>Edit Profile</h2>
+        <article class="signing">
 
-      <button id="update-profile">Update</button>
-    </article>
-  </section>
-  <iframe class="footer" src="footer.html" width="100%" scrolling="no"></iframe>
+    <!-- First Name -->
+    <div class="profile-info">
+        <label for="first-name">First Name</label>
+        <input id="first-name" type="text" placeholder="Enter your first name here" />
+    </div>
+    <!-- Last Name -->
+    <div class="profile-info">
+        <label for="last-name">Last Name</label>
+        <input id="last-name" type="text" placeholder="Enter your last name here" />
+    </div>
+    <!-- Alias -->
+    <div class="profile-info">
+        <label for="alias">Alias</label>
+        <input id="alias" type="text" placeholder="Enter your alias here" />
+    </div>
+    <!-- Email -->
+    <div class="profile-info">
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="Enter your email here" />
+    </div>
+    <!-- Gender -->
+    <div class="profile-info">
+        <label for="gender">How do you gender identify?</label>
+        <input id="gender" type="text" placeholder="Enter your gender here" />
+    </div>
+    <!-- DOB -->
+    <div class="profile-info">
+        <label for="DOB">Date of Birth</label>
+        <input type="date" name="Date of Birth" data-date-inline-picker="true" />
+    </div>
+    <!-- Password -->
+    <div class="profile-info">
+        <label for="password">Password</label>
+        <input type="password" placeholder="Enter your password" />
+    </div>
+    <!-- Confirm Password -->
+    <div class="profile-info">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" placeholder="Confirm your password" />
+    </div>
+    <!--<input type="submit" id="update-profile" value="Update" />-->
+<p>
+    <button onclick="save()" type="button"><a href="profile.html">Update</a></button>
+</p>
+<a href="javascript:clear()">Clear Items</a>
+</article>
+    </section>
+    
+    <iframe class="footer" src="footer.html" width="100%"></iframe>
 </body>
 
 </html>
