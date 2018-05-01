@@ -7,13 +7,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>MyFamilyTree - Edit</title>
   <link rel="stylesheet" href="css/styles.css">
+  <script src="scripts/save.js"></script>
 </head>
-
+<iframe src="header.html" width="100%" scrolling="no"></iframe>
 <body>
-  <iframe src="header.html" width="100%" scrolling="no"></iframe>
   <div id="upsert-story">
     <section>
-      <h2>Family Tree</h2>
+      <h1>Family Tree</h1>
       <article>
         <!-- Title -->
         <div>
@@ -74,12 +74,12 @@
             </td>
           </tr>
         </table>
-
-        <button id="save-button">Save</button>
-      </article>
+        <p>
+        <button class="btn tree" onclick="savetree()" type="button">Save</button>
+        </p>
+        </article>
     </section>
   </div>
-  <iframe class="footer" src="footer.html" width="100%" scrolling="no"></iframe>
 </body>
-
+<iframe id="footer" src="footer.html" width="100%" scrolling="no"></iframe>
 </html>

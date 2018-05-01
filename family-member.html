@@ -7,36 +7,25 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>MyFamilyTree - FamilyMember</title>
   <link rel="stylesheet" href="css/styles.css">
-</head>
+  <script src="scripts/display.js"></script>
 
+</head>
+<iframe src="header.html" width="100%" scrolling="no"></iframe>
 <body>
-  <iframe src="header.html" width="100%" scrolling="no"></iframe>
   <section>
-    <h2>Family member details</h2>
+    <h1>Family member details</h1>
     <article>
-      <div>
-        <label for="first-name">First Name</label>
-        <span id="first-name">Francois</span>
-      </div>
-      <!-- Last Name -->
-      <div>
-        <label for="first-name">Last Name</label>
-        <span id="first-name">Brindeau</span>
-      </div>
-      <!-- Gender -->
-      <div>
-        <label for="gender">How do you gender identify?</label>
-        <span id="gender">Male</span>
-      </div>
-      <!-- DOB -->
-      <div>
-        <label for="DOB">Date of Birth</label>
-        <span id="date-of-birth">9/6/00</span>
-      </div>
-      <a href="upsert-member.html">Edit</a>
+      <p id="display_data"></p>
+      <p>
+        <button type="button">
+          <a href="upsert-member.html">Edit</a>
+        </button>
+      </p>
+      <p>
+        <button onclick="displaymember()" type="button">Refresh</button>
+      </p>
     </article>
   </section>
-  <iframe class="footer" src="footer.html" width="100%" scrolling="no"></iframe>
 </body>
-
+<iframe id="footer" src="footer.html" width="100%" scrolling="no"></iframe>
 </html>

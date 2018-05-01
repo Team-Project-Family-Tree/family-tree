@@ -7,38 +7,40 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>MyFamilyTree - EditMember</title>
   <link rel="stylesheet" href="css/styles.css">
-</head>
+  <script src="scripts/save.js"></script>
 
+</head>
+<iframe src="header.html" width="100%" scrolling="no"></iframe>
 <body>
-  <iframe src="header.html" width="100%" scrolling="no"></iframe>
-  <section>
-    <h2>Edit Member</h2>
-    <article class="signing">
+  <section class="profile-container">
+    <h1>Edit Member</h1>
+    <form class="profile-form">
       <!-- First Name -->
       <div class="profile-info">
-        <label for="first-name">First Name</label>
-        <input id="first-name" type="text" placeholder="Keno">
+        <label for="firstnamemember">First Name</label>
+        <input id="firstnamemember" type="text" placeholder="Enter your first name here">
       </div>
       <!-- Last Name -->
       <div class="profile-info">
-        <label for="first-name">Last Name</label>
-        <input id="first-name" type="text" placeholder="Mullings">
+        <label for="lastnamemember">Last Name</label>
+        <input id="lastnamemember" type="text" placeholder="Enter your last name here">
       </div>
       <!-- Gender -->
       <div class="profile-info">
-        <label for="gender">How do you gender identify?</label>
-        <input id="gender" type="text" value="Male">
+        <label for="gendermember">How do you gender identify?</label>
+        <input id="gendermember" type="text" placeholder="Enter your gender here">
       </div>
       <!-- DOB -->
       <div class="profile-info">
-        <label for="DOB">Date of Birth</label>
-        <input type="date" name="Date of Birth" data-date-inline-picker="true">
+        <label for="dobmember">Date of Birth</label>
+        <input id="dobmember" type="date" name="Date of Birth" data-date-inline-picker="true">
       </div>
-
-      <button id="update-profile">Update</button>
-    </article>
+      <p>
+        <button class="btn update" onclick="savemember()" type="button">Update</button>
+      </p>
+      <a href="javascript:clear()">Clear Items</a>
+    
   </section>
-  <iframe class="footer" src="footer.html" width="100%" scrolling="no"></iframe>
 </body>
-
+<iframe id="footer" src="footer.html" width="100%" scrolling="no"></iframe>
 </html>
